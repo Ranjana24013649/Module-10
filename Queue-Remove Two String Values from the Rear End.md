@@ -23,6 +23,33 @@ To write a Python program to:
 ##  Program:
 Add Code Here
 
+q = []
+
+n = int(input("Enter number of strings: "))
+
+for i in range(n):
+
+    val = input(f"Enter string {i+1}: ")
+    
+    q.append(val)
+
+if len(q) >= 2:
+
+    q.pop()
+    
+    q.pop()
+    
+elif len(q) == 1:
+
+    q.pop()
+
+print("Updated list:", q)
+
 ### Output:
 
+![446549129-42de00bf-2287-464f-9792-c906d90d646b](https://github.com/user-attachments/assets/bd3262d9-386b-4191-9e7a-fedd15232eab)
+
+
 ## Result:
+
+Therefore the given Python Program has been executed successfully and the output has been verified.
