@@ -23,6 +23,35 @@ To write a Python program to:
 
 ## 🧪 Program: 
 
+q = []
+
+n = int(input("Enter number of elements: "))
+
+for i in range(n):
+
+    val = int(input(f"Enter element {i+1}: "))
+    
+    q.append(val)
+
+if len(q) >= 2:
+
+    q.pop(0)
+    
+    q.pop(0)
+    
+elif len(q) == 1:
+
+    q.pop(0)
+
+q.sort(reverse=True)
+
+print("Remaining elements in descending order:", q)
+
 ### Output:
 
+![446545618-fcb3b95c-1493-44de-9c38-1154abb2457c](https://github.com/user-attachments/assets/2a6ea200-7ff4-47f1-acde-4656536d1a64)
+
+
 ## Result:
+
+Therefore the given Python Program has been executed successfully and the output has been verified.
