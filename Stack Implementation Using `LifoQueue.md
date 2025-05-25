@@ -24,6 +24,38 @@ To create a Python program that:
 ## Program
 Add Code Here
 
-## 🧪 Sample Input and Output
+
+from queue import LifoQueue
+
+stack = LifoQueue(maxsize=7)
+
+n = int(input("Enter number of elements to push (max 7): "))
+
+for i in range(n):
+
+    if not stack.full():
+    
+        val = input(f"Enter value {i+1}: ")
+        
+        stack.put(val)
+        
+    else:
+    
+        print("Stack is full. Cannot push more elements.")
+        
+        break
+
+print("Is the stack full?", stack.full())
+
+print("Stack elements in LIFO order:")
+
+while not stack.empty():
+
+    print(stack.get())
+## Output
+
+![446549647-d10834a1-2a77-49dc-9ac6-5969e21e3a6a](https://github.com/user-attachments/assets/7b8d6a73-a557-45d7-9326-68d76f56063d)
 
 ## Result:
+
+Therefore the given Python Program has been executed successfully and the output has been verified.
